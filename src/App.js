@@ -10,14 +10,14 @@ function App() {
       <Router>
         <Navbar />
         <Switch>
+          {/* <Route exact path="/about">
+            <About /> 
+          </Route>  */}
+          <Route exact path="/timeline">
+            <Timeline />
+          </Route>
           <Route exact path="/">
             <Home />
-          </Route>
-          <Route exact path="/about">
-            {/* <About /> */}
-          </Route>
-          <Route exact path="/timeline">
-            <Timeline /> 
           </Route>
         </Switch>
       </Router>

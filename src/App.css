@@ -6,4 +6,8 @@
   --ubuntu-font: "Ubuntu", sans-serif;
   --fira-font: "Fira Sans", sans-serif;
   --fira-font2: "Fira Sans Condensed", sans-serif;
+  --main-color: slateblue;
+  --main-color2: rgb(255, 81, 0);
+  --text-color: #000;
+  --text-color2: #fff;
 }

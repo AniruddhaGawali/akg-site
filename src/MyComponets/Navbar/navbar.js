@@ -1,31 +1,39 @@
 import "./navbar.css";
 import React from "react";
-import { BrowserRouter as Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   return (
     <>
       <nav>
         <span className="nav_item">
-          <Link to="/"> Home</Link>
+          <Link to="/" className="links">
+            Home
+          </Link>
         </span>
         <span className="nav_item">
-          <Link to="/timeline"> Timeline</Link>
+          <Link to="/timeline" className="links">
+            Timeline
+          </Link>
         </span>
-        <span>
-          <Link to="/">
+        <span className="logo_span">
+          <Link to="/" className="links">
             <img
               className="logo"
               src="https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg"
-              alt="Pics-Art-05-31-01-28-58"
+              alt="AKG"
             />
           </Link>
         </span>
         <span className="nav_item">
-          <Link to="/"> Projects </Link>
+          <Link to="/" className="links">
+            Projects
+          </Link>
         </span>
         <span className="nav_item">
-          <Link to="/"> Learn </Link>
+          <Link to="/" className="links">
+            Learn
+          </Link>
         </span>
       </nav>
     </>

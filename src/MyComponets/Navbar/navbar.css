@@ -7,8 +7,30 @@ nav {
 }
 
 .logo {
-  background: #000;
-  width: 100px;
+  background: #fff;
+  width: 8vw;
   border-radius: 50%;
   margin: 10px 0;
+}
+
+.nav_item {
+}
+
+.links {
+  font-size: 2.5em;
+  text-decoration: none;
+  color: var(--text-color2);
+  font-weight: 500;
+}
+
+@media screen and (max-width: 660px) {
+  nav {
+    flex-direction: column;
+  }
+  .logo_span {
+    order: -1;
+  }
+  .logo {
+    width: 8vw;
+  }
 }
