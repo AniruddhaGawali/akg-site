@@ -1,1 +1,14 @@
-nav{}
+nav {
+  background-color: slateblue;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: var(--fira-font);
+}
+
+.logo {
+  background: #000;
+  width: 100px;
+  border-radius: 50%;
+  margin: 10px 0;
+}
