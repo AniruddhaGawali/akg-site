@@ -7,10 +7,10 @@ function Navbar() {
     <>
       <nav>
         <span className="nav_item">
-          <Link to="www.google.com"> Home</Link>
+          <Link to="/"> Home</Link>
         </span>
         <span className="nav_item">
-          <Link to="/"> Timeline</Link>
+          <Link to="/timeline"> Timeline</Link>
         </span>
         <span>
           <Link to="/">
