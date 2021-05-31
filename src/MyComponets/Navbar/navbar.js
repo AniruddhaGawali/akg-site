@@ -1,4 +1,5 @@
 import "./navbar.css";
+import React from "react";
 import { BrowserRouter as Link } from "react-router-dom";
 
 function Navbar() {
@@ -6,7 +7,7 @@ function Navbar() {
     <>
       <nav>
         <span className="nav_item">
-          <Link to="/"> Home</Link>
+          <Link to="www.google.com"> Home</Link>
         </span>
         <span className="nav_item">
           <Link to="/"> Timeline</Link>
