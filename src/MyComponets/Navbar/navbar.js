@@ -1,9 +1,11 @@
 import "./navbar.css";
-import React from "react";
+import React {useState} from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-  return (
+const [imgurl,setImgUrl] = useState ("https://i.ibb.co/Q85x84d/Pics-Art-05-31-10-23-10.png")
+https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg  
+return (
     <>
       <nav>
         <span className="nav_item">
@@ -20,8 +22,9 @@ function Navbar() {
           <Link to="/" className="links">
             <img
               className="logo"
-              src="https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg"
+              src={imgurl}
               alt="AKG"
+              
             />
           </Link>
         </span>
