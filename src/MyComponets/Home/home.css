@@ -30,9 +30,9 @@
 .shapes {
   width: 66vw;
   position: absolute;
-  top: -0.5vw;
+  top: 1vw;
   z-index: 1;
-  left: -22vw;
+  left: -21vw;
   rotate: -195deg;
 }
 
