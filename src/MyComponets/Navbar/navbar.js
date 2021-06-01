@@ -28,7 +28,7 @@ function Navbar() {
               alt="AKG"
               onMouseOver={() => {
                 setImgUrl(
-                  "https://i.ibb.co/9bLFxyJ/Pics-Art-06-01-08-32-27.png"
+                  "https://i.ibb.co/dWMYT20/Pics-Art-06-01-08-32-27.png"
                 );
               }}
               onMouseOut={() => {

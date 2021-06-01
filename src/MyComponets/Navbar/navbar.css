@@ -11,9 +11,19 @@ nav {
   width: 8vw;
   border-radius: 50%;
   margin: 10px 0;
+  transition: all 0.7s;
+}
+.logo:hover {
+  transform: rotate(360deg);
 }
 
 .nav_item {
+  transition: all 0.3s;
+}
+
+.nav_item:hover {
+  transform: scale(1.1);
+  z-index: 5;
 }
 
 .links {
@@ -21,6 +31,10 @@ nav {
   text-decoration: none;
   color: var(--text-color2);
   font-weight: 500;
+}
+.links:hover {
+  color: var(--main-color2);
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 660px) {
