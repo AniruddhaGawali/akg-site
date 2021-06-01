@@ -28,7 +28,12 @@ function Navbar() {
               alt="AKG"
               onMouseOver={() => {
                 setImgUrl(
-                  "https://i.ibb.co/Q85x84d/Pics-Art-05-31-10-23-10.png"
+                  "https://i.ibb.co/9bLFxyJ/Pics-Art-06-01-08-32-27.png"
+                );
+              }}
+              onMouseOut={() => {
+                setImgUrl(
+                  "https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg"
                 );
               }}
             />
