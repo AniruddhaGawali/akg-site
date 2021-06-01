@@ -34,3 +34,12 @@
   left: -22vw;
   rotate: -195deg;
 }
+
+.shapes_c {
+  width: 9vw;
+  position: absolute;
+  top: 18vw;
+  z-index: 1;
+  left: 28vw;
+  rotate: 145deg;
+}
