@@ -6,7 +6,7 @@ function Navbar() {
   const [imgurl, setImgUrl] = useState(
     "https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg"
   );
-  // https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg
+    const menu ()
   return (
     <>
       <nav>
