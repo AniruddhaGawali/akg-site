@@ -27,10 +27,10 @@
 }
 
 .shapes {
-  width: 90vw;
+  width: 99vw;
   position: absolute;
-  top: -13vw;
+  top: -20vw;
   z-index: 1;
-  left: -21vw;
-  rotate: 144deg;
+  left: -32vw;
+  rotate: 60deg;
 }
