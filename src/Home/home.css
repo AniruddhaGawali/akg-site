@@ -54,3 +54,14 @@
 .bimoji img {
   position: relative;
 }
+
+#hand {
+  top: -1vw;
+  left: -3vw;
+  rotate: 15deg;
+}
+#finger {
+  top: -6.3vw;
+  left: -5.7vw;
+  rotate: 8deg;
+}

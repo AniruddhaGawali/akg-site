@@ -16,6 +16,10 @@ function Home() {
         </div>
         <div className="bimoji">
           <img
+            src="https://i.ibb.co/QkWYsXM/Pics-Art-05-30-05-41-22.png"
+            alt=""
+          />
+          {/* <img
             src="https://i.ibb.co/kKWbTS8/Pics-Art-05-31-10-11-43.png"
             alt=""
             id="body"
@@ -29,7 +33,7 @@ function Home() {
             src="https://i.ibb.co/grRt3MT/Pics-Art-05-31-10-17-52.png"
             alt=""
             id="finger"
-          />
+          /> */}
         </div>
       </div>
     </>
