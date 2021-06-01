@@ -14,7 +14,8 @@ nav {
   transition: all 0.7s;
 }
 .logo:hover {
-  transform: rotate(360deg);
+  transform: scale(1.1) rotate(360deg);
+  z-index: 5;
 }
 
 .nav_item {
