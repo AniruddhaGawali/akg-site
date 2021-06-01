@@ -14,10 +14,6 @@ function Navbar() {
   const [oldidno, setoldid] = useState(1);
 
   function change_nav_item(id_no) {
-    console.log("id no ", id_no);
-
-    console.log("old", oldidno);
-
     if (oldidno === 1) {
       setid1("");
     } else if (oldidno === 2) {
