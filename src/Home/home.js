@@ -1,7 +1,7 @@
 import React from "react";
 import "./home.css";
-import shapes from "../../../public/shapes.svg";
-import shapes_c from "../../../public/shape-c.svg";
+import shapes from "../public/shapes.svg";
+import shapes_c from "../public/shape-c.svg";
 
 function Home() {
   return (
