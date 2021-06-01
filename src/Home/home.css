@@ -44,3 +44,13 @@
   left: 28vw;
   rotate: 145deg;
 }
+
+.bimoji {
+  position: relative;
+  top: -35vw;
+  left: 69.5vw;
+}
+
+.bimoji img {
+  position: relative;
+}

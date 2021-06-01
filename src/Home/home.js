@@ -14,6 +14,23 @@ function Home() {
           <h1>Aniruddha Gawali</h1>
           <h3>Coder | Student</h3>
         </div>
+        <div className="bimoji">
+          <img
+            src="https://i.ibb.co/kKWbTS8/Pics-Art-05-31-10-11-43.png"
+            alt=""
+            id="body"
+          />
+          <img
+            src="https://i.ibb.co/Kx5YvhV/Pics-Art-05-31-10-15-33.png"
+            alt=""
+            id="hand"
+          />
+          <img
+            src="https://i.ibb.co/grRt3MT/Pics-Art-05-31-10-17-52.png"
+            alt=""
+            id="finger"
+          />
+        </div>
       </div>
     </>
   );
