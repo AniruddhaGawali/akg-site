@@ -1,11 +1,13 @@
 import "./navbar.css";
-import React {useState} from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Navbar() {
-const [imgurl,setImgUrl] = useState ("https://i.ibb.co/Q85x84d/Pics-Art-05-31-10-23-10.png")
-https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg  
-return (
+  const [imgurl, setImgUrl] = useState(
+    "https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg"
+  );
+  // https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg
+  return (
     <>
       <nav>
         <span className="nav_item">
@@ -24,7 +26,11 @@ return (
               className="logo"
               src={imgurl}
               alt="AKG"
-              
+              onMouseOver={() => {
+                setImgUrl(
+                  "https://i.ibb.co/Q85x84d/Pics-Art-05-31-10-23-10.png"
+                );
+              }}
             />
           </Link>
         </span>
