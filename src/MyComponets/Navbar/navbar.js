@@ -95,7 +95,7 @@ function Navbar() {
             Projects
           </Link>
         </span>
-        <span>
+        <span className="nav_item">
           <Link
             to="/"
             className="links"

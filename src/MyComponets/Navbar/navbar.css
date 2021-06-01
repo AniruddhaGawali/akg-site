@@ -24,7 +24,7 @@ nav {
 
 .nav_item:hover {
   transform: scale(1.1);
-  z-index: 3;
+  z-index: 2;
 }
 
 .links {
@@ -32,6 +32,7 @@ nav {
   text-decoration: none;
   color: var(--text-color2);
   font-weight: 500;
+  padding: 5px;
 }
 .links:hover {
   color: var(--main-color2);
@@ -40,9 +41,8 @@ nav {
 #active {
   background: var(--main-color2);
   border-radius: 10px;
-  padding: 5px;
 }
-.active:hover {
+#active:hover {
   color: var(--text-color2);
 }
 @media screen and (max-width: 660px) {
@@ -58,8 +58,5 @@ nav {
   }
   .links {
     font-size: 2em;
-  }
-  .nav_item {
-    /* display: none; */
   }
 }
