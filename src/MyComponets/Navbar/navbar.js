@@ -11,21 +11,23 @@ function Navbar() {
   const [id3, setid3] = useState("");
   const [id4, setid4] = useState("");
 
-  var old_id_no = 1;
+  const [oldidno, setoldid] = useState(1);
+
   function change_nav_item(id_no) {
-    console.log(id_no);
-    console.log(old_id_no);
-    if (old_id_no === 1) {
+    console.log("id no ", id_no);
+
+    console.log("old", oldidno);
+
+    if (oldidno === 1) {
       setid1("");
-    } else if (old_id_no === 2) {
+    } else if (oldidno === 2) {
       setid2("");
-    } else if (old_id_no === 3) {
+    } else if (oldidno === 3) {
       setid3("");
-    } else if (old_id_no === 4) {
+    } else if (oldidno === 4) {
       setid4("");
     }
-    
-    old_id_no = id_no;
+
     if (id_no === 1) {
       setid1("active");
     } else if (id_no === 2) {
@@ -36,7 +38,7 @@ function Navbar() {
       setid4("active");
     }
 
-    console.log("new one", old_id_no);
+    setoldid(id_no);
   }
 
   return (
