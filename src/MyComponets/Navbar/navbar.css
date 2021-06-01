@@ -37,7 +37,14 @@ nav {
   color: var(--main-color2);
   text-decoration: underline;
 }
-
+#active {
+  background: var(--main-color2);
+  border-radius: 10px;
+  padding: 5px;
+}
+.active:hover {
+  color: var(--text-color2);
+}
 @media screen and (max-width: 660px) {
   nav {
     flex-direction: column;

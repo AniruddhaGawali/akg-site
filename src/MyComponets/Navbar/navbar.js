@@ -6,16 +6,63 @@ function Navbar() {
   const [imgurl, setImgUrl] = useState(
     "https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg"
   );
+  const [id1, setid1] = useState("active");
+  const [id2, setid2] = useState("");
+  const [id3, setid3] = useState("");
+  const [id4, setid4] = useState("");
+
+  var old_id_no = 1;
+  function change_nav_item(id_no) {
+    console.log(id_no);
+    console.log(old_id_no);
+    if (old_id_no === 1) {
+      setid1("");
+    } else if (old_id_no === 2) {
+      setid2("");
+    } else if (old_id_no === 3) {
+      setid3("");
+    } else if (old_id_no === 4) {
+      setid4("");
+    }
+    
+    old_id_no = id_no;
+    if (id_no === 1) {
+      setid1("active");
+    } else if (id_no === 2) {
+      setid2("active");
+    } else if (id_no === 3) {
+      setid3("active");
+    } else if (id_no === 4) {
+      setid4("active");
+    }
+
+    console.log("new one", old_id_no);
+  }
+
   return (
     <>
       <nav>
         <span className="nav_item">
-          <Link to="/" className="links">
+          <Link
+            to="/"
+            className="links"
+            id={id1}
+            onClick={() => {
+              change_nav_item(1);
+            }}
+          >
             Home
           </Link>
         </span>
         <span className="nav_item">
-          <Link to="/timeline" className="links">
+          <Link
+            to="/timeline"
+            className="links"
+            id={id2}
+            onClick={() => {
+              change_nav_item(2);
+            }}
+          >
             Timeline
           </Link>
         </span>
@@ -35,12 +82,26 @@ function Navbar() {
           {/* </Link> */}
         </span>
         <span className="nav_item">
-          <Link to="/" className="links">
+          <Link
+            to="/"
+            className="links"
+            id={id3}
+            onClick={() => {
+              change_nav_item(3);
+            }}
+          >
             Projects
           </Link>
         </span>
-        <span className="nav_item">
-          <Link to="/" className="links">
+        <span>
+          <Link
+            to="/"
+            className="links"
+            id={id4}
+            onClick={() => {
+              change_nav_item(4);
+            }}
+          >
             Learn
           </Link>
         </span>
