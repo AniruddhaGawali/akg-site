@@ -1,8 +1,8 @@
 import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./MyComponets/Navbar/navbar";
-import Home from "./MyComponets/Home/home";
-import Timeline from "./MyComponets/Timeline/timeline";
+import Navbar from "./Navbar/navbar";
+import Home from "./Home/home";
+import Timeline from "./Timeline/timeline";
 
 function App() {
   return (
