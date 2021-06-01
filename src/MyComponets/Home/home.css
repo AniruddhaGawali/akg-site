@@ -6,39 +6,28 @@
   padding: 10vw;
   color: var(--text-color);
   z-index: 2;
-  /* background: url(./shapes.svg); */
 }
 .info h4 {
-  /* position: absolute; */
   margin: 0;
   font-size: 2em;
-  /* z-index: 2; */
-  /* top: 15vw;
-  left: 11.5vw; */
 }
 
 .info h1 {
-  /* position: absolute; */
   margin: 0;
   padding: 0;
   font-size: 6em;
   font-family: var(--fira-font);
-  /* z-index: 2;
-  top: 17vw; */
 }
 
 .info h3 {
-  /* position: absolute; */
   margin: 0;
   padding: 0;
   font-size: 3.5em;
   font-family: var(--fira-font);
-  /* z-index: 2;
-  top: 25vw; */
 }
 
 .shapes {
-  width: 20vw;
+  width: 70vw;
   position: absolute;
   top: 10vw;
   z-index: 1;
