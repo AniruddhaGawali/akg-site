@@ -31,7 +31,7 @@
   width: 66vw;
   position: absolute;
   top: 1vw;
-  z-index: 1;
+  z-index: 0;
   left: -21vw;
   rotate: -195deg;
 }
@@ -40,7 +40,7 @@
   width: 9vw;
   position: absolute;
   top: 18vw;
-  z-index: 1;
+  z-index: 0;
   left: 28vw;
   rotate: 145deg;
 }

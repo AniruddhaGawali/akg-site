@@ -4,6 +4,8 @@ nav {
   align-items: center;
   justify-content: space-around;
   font-family: var(--fira-font);
+  z-index: 1;
+  position: relative;
 }
 
 .logo {
@@ -40,7 +42,10 @@ nav {
   text-decoration: underline;
 }
 #active {
-  background: var(--main-color2);
+  background: linear-gradient(
+    rgba(255, 47.947, 0, 1),
+    rgba(255, 186.174, 0, 1) 120deg
+  );
   border-radius: 10px;
 }
 #active:hover {
