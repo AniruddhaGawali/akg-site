@@ -19,6 +19,10 @@ function Navbar() {
   const menu_display = useSpring({
     display: menu ? "none" : "block"
   });
+  
+  function display_set(){
+   if (window.matchMedia('(max-width:660px)').matches){menu_display}
+}
 
   function change_nav_item(id_no) {
     if (oldidno === 1) {
@@ -47,7 +51,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <animated.span className="nav_item" style={menu_display}>
+        <animated.span className="nav_item" style={display_set}>
           <Link
             to="/"
             className="links"
@@ -59,7 +63,7 @@ function Navbar() {
             Home
           </Link>
         </animated.span>
-        <animated.span className="nav_item" style={menu_display}>
+        <animated.span className="nav_item" style={display_set}>
           <Link
             to="/timeline"
             className="links"
@@ -89,7 +93,7 @@ function Navbar() {
           />
           {/* </Link> */}
         </span>
-        <animated.span className="nav_item" style={menu_display}>
+        <animated.span className="nav_item" style={display_set}>
           <Link
             to="/"
             className="links"
@@ -101,7 +105,7 @@ function Navbar() {
             Projects
           </Link>
         </animated.span>
-        <animated.span className="nav_item" style={menu_display}>
+        <animated.span className="nav_item" style={display_set}>
           <Link
             to="/"
             className="links"
