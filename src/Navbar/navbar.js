@@ -83,7 +83,9 @@ function Navbar() {
             onMouseOut={() => {
               setImgUrl("https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg");
             }}
-            onClick={() => setMenu(!menu)}
+            onClick={() => {
+              if (window.matchMedia('(max-width:660px)').matches){setMenu(!menu)}
+              }}
           />
           {/* </Link> */}
         </span>
