@@ -1,10 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { useSpring, animated } from "react-spring";
 import "./home.css";
 import shapes from "../../public/shapes.svg";
 import shapes_c from "../../public/shape-c.svg";
 
 function Home() {
+  const [Hand, setHand] = useState(false);
+
+  const wave_shake = useSpring({
+    rotate: Hand ? "0deg":"30deg"
+  });
+  
   return (
     <>
       <div className="container">
@@ -25,7 +31,7 @@ function Home() {
             alt=""
             id="body"
           />
-          <div id="hand">
+          <animated.div id="hand" className={wave_shake}>
             <img
               src="https://i.ibb.co/tMdRkxB/Pics-Art-06-02-11-21-22.png"
               alt=""
@@ -35,9 +41,10 @@ function Home() {
                 src="https://i.ibb.co/MZcJMbT/Pics-Art-06-02-11-22-43.png"
                 alt=""
               />
-            </div>
+            </animated.div>
           </div>
         </div>
+        <button onClick={()=>{setHand(!Hand)}}> click it </button>
       </div>
     </>
   );
