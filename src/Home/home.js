@@ -43,9 +43,8 @@ function Home() {
               />
               </div>
             </animated.div>
-    
+           <button onClick={()=>{setHand(!Hand)}}> click it </button>
         </div>
-        <button onClick={()=>{setHand(!Hand)}}> click it </button>
       </div>
     </>
   );
