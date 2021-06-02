@@ -46,23 +46,8 @@
 }
 
 .bimoji {
-  position: relative;
-  top: -35vw;
+  position: absolute;
+  top: 11vw;
   left: 69.5vw;
-}
-
-.bimoji img {
-  position: relative;
-}
-
-#hand {
-  position: relative;
-  top: -8vw;
-  left: 10vw;
-}
-
-#fingur {
-  position: relative;
-  top: -11.8vw;
-  left: 1.8vw;
+  right: -69vw;
 }

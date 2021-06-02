@@ -1,10 +1,31 @@
 import React, { useState } from "react";
+<<<<<<< CodeSandbox
+import "./home.css";
+=======
 import { useSpring, animated } from "react-spring";
+>>>>>>> GitHub
 import "./home.css";
 import shapes from "../../public/shapes.svg";
 import shapes_c from "../../public/shape-c.svg";
 
 function Home() {
+<<<<<<< CodeSandbox
+  return (
+    <>
+      <div className="container">
+        <img src={shapes} alt="" className="shapes" />
+        <img src={shapes_c} alt="" className="shapes_c" />
+        <div className="info">
+          <h4>Hello!</h4>
+          <h1>Aniruddha Gawali</h1>
+          <h3>Coder | Student</h3>
+        </div>
+        <div className="bimoji">
+          <img
+            src="https://i.ibb.co/QkWYsXM/Pics-Art-05-30-05-41-22.png"
+            alt=""
+          />
+=======
   const [Hand, setHand] = useState(false);
 
   const wave_shake = useSpring({
@@ -20,13 +41,23 @@ function Home() {
           <h4>Hello!</h4>
           <h1>Aniruddha Gawali</h1>
           <h3>Coder | Student</h3>
+>>>>>>> GitHub
         </div>
+<<<<<<< CodeSandbox
+      </div>
+    </>
+  );
+}
+export default Home;
+
+=======
         <div className="bimoji">
           {/* <img
             src="https://i.ibb.co/QkWYsXM/Pics-Art-05-30-05-41-22.png"
             alt=""
           /> */}
           <img
+>>>>>>> GitHub
             src="https://i.ibb.co/VMCyHW6/Pics-Art-06-02-11-25-54.png"
             alt=""
             id="body"
