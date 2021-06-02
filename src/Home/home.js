@@ -41,8 +41,9 @@ function Home() {
                 src="https://i.ibb.co/MZcJMbT/Pics-Art-06-02-11-22-43.png"
                 alt=""
               />
+              </div>
             </animated.div>
-          </div>
+    
         </div>
         <button onClick={()=>{setHand(!Hand)}}> click it </button>
       </div>
