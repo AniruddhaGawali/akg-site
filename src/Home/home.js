@@ -15,25 +15,27 @@ function Home() {
           <h3>Coder | Student</h3>
         </div>
         <div className="bimoji">
-          <img
+          {/* <img
             src="https://i.ibb.co/QkWYsXM/Pics-Art-05-30-05-41-22.png"
             alt=""
-          />
-          {/* <img
-            src="https://i.ibb.co/kKWbTS8/Pics-Art-05-31-10-11-43.png"
+          /> */}
+          <img
+            src="https://i.ibb.co/VMCyHW6/Pics-Art-06-02-11-25-54.png"
             alt=""
             id="body"
           />
-          <img
-            src="https://i.ibb.co/Kx5YvhV/Pics-Art-05-31-10-15-33.png"
-            alt=""
-            id="hand"
-          />
-          <img
-            src="https://i.ibb.co/grRt3MT/Pics-Art-05-31-10-17-52.png"
-            alt=""
-            id="finger"
-          /> */}
+          <div id="hand">
+            <img
+              src="https://i.ibb.co/tMdRkxB/Pics-Art-06-02-11-21-22.png"
+              alt=""
+            />
+            <div id="fingur">
+              <img
+                src="https://i.ibb.co/MZcJMbT/Pics-Art-06-02-11-22-43.png"
+                alt=""
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>
