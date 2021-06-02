@@ -16,13 +16,10 @@ function Navbar() {
 
   const [menu, setMenu] = useState(false);
 
-  const menu_display = useSpring({
+  const display_set = useSpring({
     display: menu ? "none" : "block"
   });
   
-  function display_set(){
-   if (window.matchMedia('(max-width:660px)').matches){menu_display}
-}
 
   function change_nav_item(id_no) {
     if (oldidno === 1) {
