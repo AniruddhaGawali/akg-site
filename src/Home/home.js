@@ -1,4 +1,5 @@
 import React from "react";
+import { useSpring, animated } from "react-spring";
 import "./home.css";
 import shapes from "../../public/shapes.svg";
 import shapes_c from "../../public/shape-c.svg";
