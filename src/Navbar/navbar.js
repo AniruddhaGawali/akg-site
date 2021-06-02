@@ -1,6 +1,7 @@
 import "./navbar.css";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
 
 function Navbar() {
   const [imgurl, setImgUrl] = useState(
@@ -12,6 +13,12 @@ function Navbar() {
   const [id4, setid4] = useState("");
 
   const [oldidno, setoldid] = useState(1);
+
+  const [menu, setMenu] = useState(false);
+
+  const menu_display = useSpring({
+    display: menu ? "none" : "block"
+  });
 
   function change_nav_item(id_no) {
     if (oldidno === 1) {
@@ -40,7 +47,7 @@ function Navbar() {
   return (
     <>
       <nav>
-        <span className="nav_item">
+        <animated.span className="nav_item" style={menu_display}>
           <Link
             to="/"
             className="links"
@@ -51,8 +58,8 @@ function Navbar() {
           >
             Home
           </Link>
-        </span>
-        <span className="nav_item">
+        </animated.span>
+        <animated.span className="nav_item" style={menu_display}>
           <Link
             to="/timeline"
             className="links"
@@ -63,7 +70,7 @@ function Navbar() {
           >
             Timeline
           </Link>
-        </span>
+        </animated.span>
         <span className="logo_span">
           {/* <Link to="/" className="links"> */}
           <img
@@ -76,10 +83,11 @@ function Navbar() {
             onMouseOut={() => {
               setImgUrl("https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg");
             }}
+            onClick={() => setMenu(!menu)}
           />
           {/* </Link> */}
         </span>
-        <span className="nav_item">
+        <animated.span className="nav_item" style={menu_display}>
           <Link
             to="/"
             className="links"
@@ -90,8 +98,8 @@ function Navbar() {
           >
             Projects
           </Link>
-        </span>
-        <span className="nav_item">
+        </animated.span>
+        <animated.span className="nav_item" style={menu_display}>
           <Link
             to="/"
             className="links"
@@ -102,7 +110,7 @@ function Navbar() {
           >
             Learn
           </Link>
-        </span>
+        </animated.span>
       </nav>
     </>
   );
