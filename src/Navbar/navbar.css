@@ -1,15 +1,15 @@
 nav {
-  background-color: slateblue;
+  background-color: var(--main-color);
   display: flex;
   align-items: center;
   justify-content: space-around;
-  font-family: var(--fira-font);
+  font-family: var(--font-fira);
   z-index: 1;
   position: relative;
 }
 
 .logo {
-  background: #fff;
+  background: var(--text-color);
   width: 8vw;
   border-radius: 50%;
   margin: 0.8vw 0 0 0;
@@ -33,7 +33,7 @@ nav {
 .links {
   font-size: 2.5em;
   text-decoration: none;
-  color: var(--text-color2);
+  color: var(--text-color);
   font-weight: 500;
   padding: 5px;
 }

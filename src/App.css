@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500;700&family=Mate+SC&family=Space+Mono:wght@400;700&family=Ubuntu:wght@300;400;500;700&display=swap");
 
 :root {
-  --ubuntu-font: "Ubuntu", sans-serif;
-  --fira-font: "Fira Sans", sans-serif;
-  --fira-font2: "Fira Sans Condensed", sans-serif;
-  --main-color: slateblue;
-  --main-color2: rgb(255, 81, 0);
-  --text-color: #000;
-  --text-color2: #fff;
+  --main-color: #4733c5;
+  --main-color2: #ff2a00;
+  --text-color: white;
+  --text-color2: black;
+  --font-fira: "Fira Sans Condensed", sans-serif;
+  --font-mate: "Mate SC", serif;
+  --font-mono: "Space Mono", monospace;
+  --font-ubuntu: "Ubuntu", sans-serif;
 }
