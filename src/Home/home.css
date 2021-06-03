@@ -122,7 +122,8 @@
   }
   .circle_shape {
     width: 8vw;
-    left: 34vw;
+    left: 46vw;
+    top:70vw;
   }
 }
 
@@ -146,5 +147,9 @@
     top: 90vw;
     left: -15vw;
     rotate: 127deg;
+  }
+  circle_shape {
+    width: 8vw;
+    top:100vw;
   }
 }
