@@ -69,13 +69,17 @@
   rotate: 138deg;
 }
 @media screen and (max-width: 960px) {
+  .main {
+  background-color: var(--main-color);
+  height: 80vh;
+}
   .bimoji {
     width: 25vw;
   }
   .shape {
     width: 56vw;
     top: 5vw;
-    left: -15vw;
+    left: 10vw;
     rotate: 127deg;
   }
   .circle_shape {
@@ -113,7 +117,7 @@
   .shape {
     width: 70vw;
     top: 5vw;
-    left: -15vw;
+    left: 60vw;
     rotate: 127deg;
   }
   .circle_shape {
@@ -137,5 +141,10 @@
   }
   .bimoji {
     width: 40vw;
+  }
+  .shape {
+    top: 90vw;
+    left: 60vw;
+    rotate: 127deg;
   }
 }
