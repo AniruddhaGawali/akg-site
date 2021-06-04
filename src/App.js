@@ -29,7 +29,6 @@ function App() {
         <Container>
           <Button
             tooltip="Theme Change"
-            rotate={true}
             icon={"material-icons"}
             onClick={theme_change}
           />
