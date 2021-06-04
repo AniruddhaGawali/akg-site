@@ -9,9 +9,10 @@ import Timeline from './Timeline/timeline';
 
 function App() {
 const [theme, setTheme] = useState(false);
+useEffect(() => {
 const [img, setImg] = useState('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg');
+    });
 
-  useEffect(() => {
   function theme_change() {
     // the function to changes the theme in which the root variables are been changes and sone syles of some objects also.
     if (theme === false) {
@@ -29,7 +30,6 @@ const [img, setImg] = useState('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58
     }
   }
  
-  });
   
   return (
     <>
