@@ -6,18 +6,31 @@ import Navbar from './Navbar/navbar';
 import Home from './Home/home';
 import Timeline from './Timeline/timeline';
 
+let themes = 0;
+
+function theme_change() {
+  // the function to changes the theme in which the root variables are been changes and sone syles of some objects also.
+  if (themes === 0) {
+    document.body.style.backgroundColor = "rgb(14,14,14)";
+    document.documentElement.style.setProperty("--text_color", "#000");
+    document.documentElement.style.setProperty("--text_color2", "#fff");
+    themes = 1;
+  } else {
+    document.body.style.backgroundColor = "white";
+    document.documentElement.style.setProperty("--text_color", "#fff");
+    document.documentElement.style.setProperty("--text_color2", "#000");
+    themes = 0;
+  }
+}
 function App() {
   return (
     <>
       <div>
         <Container>
-          <Link href="#" tooltip="Create note link" />
-          <Link href="#" tooltip="Add user link" />
-
           <Button
             tooltip="The big plus button!"
             rotate={true}
-            onClick={() => alert('FAB Rocks!')}
+            onClick={}
           />
         </Container>
       </div>
