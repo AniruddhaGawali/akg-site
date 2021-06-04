@@ -9,7 +9,7 @@ import Timeline from './Timeline/timeline';
 function App() {
   return (
     <>
-      <div style={{ background: 'transparent' }}>
+      <div>
         <Container>
           <Link href="#" tooltip="Create note link" />
           <Link href="#" tooltip="Add user link" />
