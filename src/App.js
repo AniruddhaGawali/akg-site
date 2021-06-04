@@ -12,13 +12,13 @@ function theme_change() {
   // the function to changes the theme in which the root variables are been changes and sone syles of some objects also.
   if (themes === 0) {
     document.body.style.backgroundColor = "rgb(14,14,14)";
-    document.documentElement.style.setProperty("--text_color", "#000");
-    document.documentElement.style.setProperty("--text_color2", "#fff");
+    document.documentElement.style.setProperty("--text-color", "#000");
+    document.documentElement.style.setProperty("--text-color2", "#fff");
     themes = 1;
   } else {
     document.body.style.backgroundColor = "white";
-    document.documentElement.style.setProperty("--text_color", "#fff");
-    document.documentElement.style.setProperty("--text_color2", "#000");
+    document.documentElement.style.setProperty("--text-color", "#fff");
+    document.documentElement.style.setProperty("--text-color2", "#000");
     themes = 0;
   }
 }
