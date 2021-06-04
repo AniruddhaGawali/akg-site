@@ -30,7 +30,7 @@ function App() {
           <Button
             tooltip="The big plus button!"
             rotate={true}
-            onClick={}
+            onClick={theme_change}
           />
         </Container>
       </div>
