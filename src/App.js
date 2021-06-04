@@ -30,7 +30,7 @@ function App() {
           <Button
             tooltip="Theme Change"
             rotate={true}
-            icon={"https://i.ibb.co/vwvG7bj/outline-dark-mode-black-24dp.png"}
+            icon={"material-icons"}
             onClick={theme_change}
           />
         </Container>
