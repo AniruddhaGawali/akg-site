@@ -9,6 +9,18 @@ import Timeline from './Timeline/timeline';
 function App() {
   return (
     <>
+      <div style={{ background: 'transparent' }}>
+        <Container>
+          <Link href="#" tooltip="Create note link" />
+          <Link href="#" tooltip="Add user link" />
+
+          <Button
+            tooltip="The big plus button!"
+            rotate={true}
+            onClick={() => alert('FAB Rocks!')}
+          />
+        </Container>
+      </div>
       <Router>
         <Navbar />
         <Switch>
@@ -23,16 +35,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-        <Container  style={{ background: 'transparent' }}>
-          <Link href="#" tooltip="Create note link" />
-          <Link href="#" tooltip="Add user link" />
-
-          <Button
-            tooltip="The big plus button!"
-            rotate={true}
-            onClick={() => alert('FAB Rocks!')}
-          />
-        </Container>
     </>
   );
 }
