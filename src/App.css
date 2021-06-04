@@ -12,4 +12,8 @@
 }
 .fab-container{
   background: transparent;
+  bottom: 3vh;
+  position: fixed;
+  margin: 1em;
+  right: 2vw
 }
