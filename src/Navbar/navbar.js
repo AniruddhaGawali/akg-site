@@ -14,7 +14,7 @@ function Navbar() {
 
   const [oldidno, setoldid] = useState(1);
 
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   const display_set = useSpring({
     display: menu ? "none" : "block"
