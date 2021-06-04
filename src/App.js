@@ -6,26 +6,28 @@ import Navbar from './Navbar/navbar';
 import Home from './Home/home';
 import Timeline from './Timeline/timeline';
 
-let themes = 0;
+
+function App() {
+const [theme, setTheme] = useState(false);
+const [img, setImg] = useState('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg');
 
 function theme_change() {
   // the function to changes the theme in which the root variables are been changes and sone syles of some objects also.
-  if (themes === 0) {
+  if (themes === false) {
     document.body.style.backgroundColor = "rgb(14,14,14)";
     document.documentElement.style.setProperty("--text-color", "#000");
     document.documentElement.style.setProperty("--text-color2", "#fff");
     setImg('https://i.ibb.co/DMrJ8nb/Pics-Art-05-31-01-29-26.jpg')
-    themes = 1;
+    setTheme(true)
   } else {
     document.body.style.backgroundColor = "white";
     document.documentElement.style.setProperty("--text-color", "#fff");
     document.documentElement.style.setProperty("--text-color2", "#000");
     setImg('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg')
-    themes = 0;
+    setTheme(false)
   }
 }
-function App() {
-  const [img, setImg] = useState('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg');
+  
   return (
     <>
       <div>
