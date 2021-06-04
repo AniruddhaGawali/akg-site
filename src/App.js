@@ -10,17 +10,6 @@ function App() {
   return (
     <>
       <Router>
-        <Container>
-          <Link href="#" tooltip="Create note link" />
-          <Link href="#" tooltip="Add user link" />
-
-          <Button
-            tooltip="The big plus button!"
-            style={{ background: 'transparent' }}
-            rotate={true}
-            onClick={() => alert('FAB Rocks!')}
-          />
-        </Container>
         <Navbar />
         <Switch>
           {/* <Route exact path="/about">
@@ -34,6 +23,16 @@ function App() {
           </Route>
         </Switch>
       </Router>
+        <Container  style={{ background: 'transparent' }}>
+          <Link href="#" tooltip="Create note link" />
+          <Link href="#" tooltip="Add user link" />
+
+          <Button
+            tooltip="The big plus button!"
+            rotate={true}
+            onClick={() => alert('FAB Rocks!')}
+          />
+        </Container>
     </>
   );
 }
