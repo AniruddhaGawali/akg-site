@@ -7,6 +7,9 @@ nav {
   z-index: 1;
   position: relative;
 }
+.material-icons{
+font-size:0.8em;
+}
 
 .logo {
   background: var(--text-color);
