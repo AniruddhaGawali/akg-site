@@ -5,6 +5,7 @@ import { useSpring, animated } from "react-spring";
 
 function Navbar(img_url) {
   const [imgurl, setImgUrl] = useState(img_url);
+  console.log(img_url)
   const [id1, setid1] = useState("active");
   const [id2, setid2] = useState("");
   const [id3, setid3] = useState("");
