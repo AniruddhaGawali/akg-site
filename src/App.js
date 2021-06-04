@@ -16,6 +16,7 @@ function App() {
 
           <Button
             tooltip="The big plus button!"
+            style={{background : transparent}}
             rotate={true}
             onClick={() => alert('FAB Rocks!')}
           />
