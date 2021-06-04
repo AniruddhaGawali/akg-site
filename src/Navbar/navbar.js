@@ -3,10 +3,8 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 
-function Navbar() {
-  const [imgurl, setImgUrl] = useState(
-    "https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg"
-  );
+function Navbar(img_url) {
+  const [imgurl, setImgUrl] = useState(img_url);
   const [id1, setid1] = useState("active");
   const [id2, setid2] = useState("");
   const [id3, setid3] = useState("");
@@ -84,7 +82,7 @@ function Navbar() {
               setImgUrl("https://i.ibb.co/dWMYT20/Pics-Art-06-01-08-32-27.png");
             }}
             onMouseOut={() => {
-              setImgUrl("https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg");
+              setImgUrl(img_url);
             }}
             onClick={() => {
               if (window.matchMedia('(max-width:660px)').matches){setMenu(!menu)}
