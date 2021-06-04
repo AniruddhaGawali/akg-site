@@ -28,7 +28,7 @@ function App() {
       <div>
         <Container>
           <Button
-            tooltip="The big plus button!"
+            tooltip="Theme Change"
             rotate={true}
             onClick={theme_change}
           />
