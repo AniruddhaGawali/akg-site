@@ -1,15 +1,25 @@
-import "./App.css";
-import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { Container, Button, Link } from 'react-floating-action-button'
-import Navbar from "./Navbar/navbar";
-import Home from "./Home/home";
-import Timeline from "./Timeline/timeline";
+import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Container, Button, Link } from 'react-floating-action-button';
+import Navbar from './Navbar/navbar';
+import Home from './Home/home';
+import Timeline from './Timeline/timeline';
 
 function App() {
   return (
     <>
       <Router>
+        <Container>
+          <Link href="#" tooltip="Create note link" />
+          <Link href="#" tooltip="Add user link" />
+
+          <Button
+            tooltip="The big plus button!"
+            rotate={true}
+            onClick={() => alert('FAB Rocks!')}
+          />
+        </Container>
         <Navbar />
         <Switch>
           {/* <Route exact path="/about">
@@ -23,17 +33,6 @@ function App() {
           </Route>
         </Switch>
       </Router>
-      <Container>
-            <Link href="#"
-                tooltip="Create note link""/>
-            <Link href="#"
-                tooltip="Add user link" />
-                
-            <Button
-                tooltip="The big plus button!"
-                rotate={true}
-                onClick={() => alert('FAB Rocks!')} />
-        </Container>
     </>
   );
 }
