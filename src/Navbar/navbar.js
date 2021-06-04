@@ -57,6 +57,7 @@ function Navbar() {
               change_nav_item(1);
             }}
           >
+<span class="material-icons">home</span>
             Home
           </Link>
         </animated.span>
