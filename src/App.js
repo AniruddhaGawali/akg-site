@@ -13,7 +13,7 @@ const [img, setImg] = useState('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58
 
 function theme_change() {
   // the function to changes the theme in which the root variables are been changes and sone syles of some objects also.
-  if (themes === false) {
+  if (theme === false) {
     document.body.style.backgroundColor = "rgb(14,14,14)";
     document.documentElement.style.setProperty("--text-color", "#000");
     document.documentElement.style.setProperty("--text-color2", "#fff");
