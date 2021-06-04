@@ -1,5 +1,5 @@
 import './App.css';
-import React , {useState} from 'react';
+import React , {useState, useEffect} from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container, Button } from 'react-floating-action-button';
 import Navbar from './Navbar/navbar';
@@ -11,22 +11,25 @@ function App() {
 const [theme, setTheme] = useState(false);
 const [img, setImg] = useState('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg');
 
-function theme_change() {
-  // the function to changes the theme in which the root variables are been changes and sone syles of some objects also.
-  if (theme === false) {
-    document.body.style.backgroundColor = "rgb(14,14,14)";
-    document.documentElement.style.setProperty("--text-color", "#000");
-    document.documentElement.style.setProperty("--text-color2", "#fff");
-    setImg('https://i.ibb.co/DMrJ8nb/Pics-Art-05-31-01-29-26.jpg')
-    setTheme(true)
-  } else {
-    document.body.style.backgroundColor = "white";
-    document.documentElement.style.setProperty("--text-color", "#fff");
-    document.documentElement.style.setProperty("--text-color2", "#000");
-    setImg('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg')
-    setTheme(false)
+  useEffect(() => {
+  function theme_change() {
+    // the function to changes the theme in which the root variables are been changes and sone syles of some objects also.
+    if (theme === false) {
+      document.body.style.backgroundColor = "rgb(14,14,14)";
+      document.documentElement.style.setProperty("--text-color", "#000");
+      document.documentElement.style.setProperty("--text-color2", "#fff");
+      setImg('https://i.ibb.co/DMrJ8nb/Pics-Art-05-31-01-29-26.jpg')
+      setTheme(true)
+    } else {
+      document.body.style.backgroundColor = "white";
+      document.documentElement.style.setProperty("--text-color", "#fff");
+      document.documentElement.style.setProperty("--text-color2", "#000");
+      setImg('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg')
+      setTheme(false)
+    }
   }
-}
+ 
+  });
   
   return (
     <>
