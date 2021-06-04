@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { useSpring, animated } from "react-spring";
 
-function Navbar(img_url) {
+function Navbar({img_url}) {
   const [imgurl, setImgUrl] = useState(img_url);
   console.log(img_url)
   const [id1, setid1] = useState("active");
