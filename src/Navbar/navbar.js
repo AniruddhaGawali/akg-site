@@ -57,7 +57,7 @@ function Navbar() {
               change_nav_item(1);
             }}
           >
-<span class="material-icons">home</span>
+            <span class="material-icons">home</span>
             Home
           </Link>
         </animated.span>
@@ -70,6 +70,7 @@ function Navbar() {
               change_nav_item(2);
             }}
           >
+            <span class="material-icons-outlined">event</span>
             Timeline
           </Link>
         </animated.span>
@@ -99,7 +100,7 @@ function Navbar() {
             onClick={() => {
               change_nav_item(3);
             }}
-          >
+          ><span class="material-icons-outlined">code</span>
             Projects
           </Link>
         </animated.span>
@@ -111,7 +112,7 @@ function Navbar() {
             onClick={() => {
               change_nav_item(4);
             }}
-          >
+          ><span class="material-icons-outlined">school</span>
             Learn
           </Link>
         </animated.span>
