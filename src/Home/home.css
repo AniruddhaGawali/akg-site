@@ -57,7 +57,7 @@
   z-index: 1;
   top: 14vw;
   left: -11vw;
-  rotate: 127deg;
+  transform: rotate(127deg)
 }
 
 .circle_shape {
@@ -66,7 +66,7 @@
   z-index: 1;
   left: 26vw;
   top: 21vw;
-  rotate: 138deg;
+  transform: rotate(138deg)
 }
 @media screen and (max-width: 960px) {
   .main {
@@ -80,7 +80,6 @@
     width: 56vw;
     top: 10vw;
     left: -15vw;
-    rotate: 127deg;
   }
   .circle_shape {
     width: 8vw;
@@ -118,7 +117,6 @@
     width: 70vw;
     top: 60vw;
     left: -15vw;
-    rotate: 127deg;
   }
   .circle_shape {
     width: 8vw;
@@ -146,7 +144,6 @@
   .shape {
     top: 90vw;
     left: -15vw;
-    rotate: 127deg;
   }
   circle_shape {
     width: 8vw;
