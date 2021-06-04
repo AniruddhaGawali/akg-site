@@ -7,7 +7,6 @@ import Home from './Home/home';
 import Timeline from './Timeline/timeline';
 
 let themes = 0;
-const [img, setImg] = useState('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg');
 
 function theme_change() {
   // the function to changes the theme in which the root variables are been changes and sone syles of some objects also.
@@ -26,6 +25,7 @@ function theme_change() {
   }
 }
 function App() {
+  const [img, setImg] = useState('https://i.ibb.co/F6kqwHH/Pics-Art-05-31-01-28-58.jpg');
   return (
     <>
       <div>
