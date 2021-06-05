@@ -64,7 +64,6 @@ function Navbar({ img_url }) {
               }
             }}
           />
-
         </span>
         <animated.span className="nav_item" style={display_set}>
           <Link to="/" className="links" onClick={change_nav_item}>
