@@ -41,12 +41,12 @@ function Navbar({ img_url }) {
             Home
           </Link>
         </animated.span>
-        <animated.span className="nav_item" style={display_set}>
+        {/* <animated.span className="nav_item" style={display_set}>
           <Link to="/timeline" className="links" onClick={change_nav_item}>
             <span class="material-icons">event</span>
             Timeline
           </Link>
-        </animated.span>
+        </animated.span> */}
         <span className="logo_span">
           <img
             className="logo"
