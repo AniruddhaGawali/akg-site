@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { Container, Button } from 'react-floating-action-button';
 import Navbar from './Navbar/navbar';
+import Timeline from './Timeline/tim'
 import Home from './Home/home';
 // import Timeline from './Timeline/timeline';
 
@@ -43,12 +44,12 @@ function App() {
       <Router>
         <Navbar img_url={img} />
         <Switch>
-          {/* <Route exact path="/about">
+          <Route exact path="/about">
             <About /> 
           </Route>  */}
           {/* <Route exact path="/timeline">
             <Timeline />
-          </Route> */}
+          </Route>
           <Route exact path="/">
             <Home />
           </Route>
